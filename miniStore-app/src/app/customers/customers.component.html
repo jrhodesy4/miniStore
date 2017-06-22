@@ -1,0 +1,4 @@
+<h3>Customers</h3>
+
+<app-customer-new (newCustomerEvent)='addCustomer($event)'></app-customer-new>
+<app-customer-list [customers]='customers' (deleteCustomerEvent)='deleteCustomer($event)'></app-customer-list>

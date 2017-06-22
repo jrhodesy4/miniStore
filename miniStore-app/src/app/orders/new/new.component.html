@@ -1,0 +1,18 @@
+<h4>Create an Order</h4>
+
+<form (submit)='createOrder()'>
+  <label for="">Customer:</label>
+  <select class="" name="customer" [(ngModel)]='order.customer'>
+    <option *ngFor='let customer of customers' [value]=customer._id>{{customer.name}}</option>
+  </select>
+
+  <label for="">Product:</label>
+  <select class="" name="product" [(ngModel)]='order.product'>
+    <option *ngFor='let product of products' [value]=product._id>{{product.name}}</option>
+  </select>
+  
+  <label for="">Quantity:</label>
+  <input type="number" name="quantity" [(ngModel)]='order.quantity'>
+  <input type="submit" name="" value="Create Order">
+
+</form>

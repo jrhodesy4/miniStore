@@ -1,0 +1,4 @@
+<h3>Orders</h3>
+
+<app-order-new [products]='products' [customers]='customers' (newOrderEvent)='createOrder($event)'></app-order-new>
+<app-order-list [orders]='orders'></app-order-list>

@@ -1,0 +1,9 @@
+<form (submit)='createProduct()'>
+  <label for="">Name:</label>
+  <input type="text" name="name" value="" [(ngModel)]='product.name' #name='ngModel'>
+  <label for="">Description:</label>
+  <input type="text" name="description" value="" [(ngModel)]='product.description' #description='ngModel'>
+  <label for="">Quantity:</label>
+  <input type="text" name="quantity" value="" [(ngModel)]='product.quantity' #quantity='ngModel'>
+  <input type="submit" name="" value="Add Product">
+</form>
